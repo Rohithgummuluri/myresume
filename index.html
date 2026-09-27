@@ -1,81 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body {
-            background-color: white;
-            h1{
-                color:black;
-            }
-            h2{
-                color:black;
-            }
-            
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Rohith Gummuluri - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #111111;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.45;
+        }
+
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            padding: 15mm 16mm;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 25px;
+            color: #111111;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contact {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .contact a {
+            color: #111111;
+            text-decoration: none;
+        }
+
+        /* Section headings */
+        .section {
+            margin-top: 11px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            padding-bottom: 3px;
+            border-bottom: 1.5px solid #222222;
+            color: #111111;
+        }
+
+        .section-content {
+            margin-top: 6px;
+        }
+
+        /* Summary */
+        .summary {
+            text-align: justify;
+            margin: 0;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 7px;
+        }
+
+        .education-item strong {
+            font-size: 13px;
+        }
+
+        .education-meta {
+            color: #333333;
+        }
+
+        /* Internship */
+        .experience-title {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .experience-meta {
+            font-style: italic;
+            color: #333333;
+        }
+
+        ul {
+            margin-top: 4px;
+            margin-bottom: 5px;
+            padding-left: 19px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 9px;
+        }
+
+        .project-title {
+            font-size: 13.5px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .project-description {
+            margin: 0 0 3px 0;
+            text-align: justify;
+        }
+
+        .technologies {
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .technologies strong {
+            font-weight: bold;
+        }
+
+        /* Skills */
+        .skills {
+            margin: 0;
+            padding-left: 19px;
+        }
+
+        .skills li {
+            margin-bottom: 3px;
+        }
+
+        /* Certifications */
+        .certification {
+            margin-bottom: 5px;
+        }
+
+        /* Print */
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+                padding: 10mm 12mm;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            a {
+                color: #111111;
+                text-decoration: none;
+            }
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 800px) {
+
+            .resume {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+                padding: 25px;
+            }
+
+            body {
+                font-size: 14px;
+            }
+
+            .header h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1 align="center">Rohith Gummuluri</h1>
-    <h3 align="center">rohithgummuluri12@gmail.com</a> | 91+ 8367218113 | Tadepalligudem,Andhra Pradesh </a></h3>
-    <h2>CAREER OBJECTIVE</h2>
-    <p>Dedicated and self-motivated third-year B.Tech student in Artificial Intelligence and Machine Learning with a solid understanding of Python, Machine Learning, Data Structures, SQL, and Artificial Intelligence concepts. Passionate about solving real-world problems through technology and eager to contribute to innovative projects while gaining practical industry experience.</p>
-    <br>
-    <h2>EDUCATION</h2>
-    <hr>
-    <table border="1">
-        <tr>
-            <th>Degree</th>
-            <th>Institution</th>
-            <th>Duration</th>
-        </tr>
-        <tr>
-            <td>Bachelor of Technology in Artificial Intelligence and Machine Learning</td>
-            <td>Sasi institute of Technology and engineering</td>
-            <td>2024 - 2028</td>
-        </tr>
-        <tr>
-            <td>Intermediate</td>
-            <td>Sasi Junior College,tadepalligudem</td>
-            <td>2022 - 2024</td>
-            </tr>
-            <tr>
-                <td>SSC</td>
-                <td>Sasi English Medium School,tadepalligudem</td>
-                <td>2020 - 2022</td>
-            </tr>
-    </table>
-    <br>
-    <h2>Projects</h2>
-    <hr>
-    <ul><li><h3 style="color:darkblue;">IoT-Based Fire Fighting Robot</h3></li></ul>
-<p>Developed an IoT-enabled fire-fighting robot capable of detecting fire using flame and temperature sensors and responding automatically to potential fire hazards. Integrated a microcontroller with wireless communication to enable real-time monitoring and remote control through an IoT platform. Designed the system to send instant alerts, navigate toward the fire source, and activate a water pump to suppress flames. The project demonstrates the practical application of IoT, embedded systems, automation, and sensor integration for improving fire safety.</p>
-<ul><li><h3 style="color:darkblue;">Core of Pencil–Business Website</h3></li></ul>
-<p>Designed and developed a responsive business website for Core of Pencil using HTML, CSS, and JavaScript. Implemented an online ordering system that allows customers to browse products and place orders directly through the website, with order details being received instantly for processing. Created a user-friendly interface with responsive design, interactive features, and smooth navigation to enhance the customer experience and support business growth.</p>
-<p><b>Technologies used:</b>HTML5, CSS, JavaScript</p>
-<h2>Technical Skills</h2>
-<hr>
-<ul>
-    <li><b style="color:darkblue">Programming Languages:</b> Python, C, Java</li>
-    <li><b style="color:darkblue">Core Concepts:</b>Data Structures and Algorithms,Object-Oriented Programming(OOP)</li>
-    <li><b style="color:darkblue">AI/ML:</b>Supervised Learning Basics,Model Evaluation</li>
-    <li><b style="color:darkblue">Web Development:</b>HTML, CSS, JavaScript</li>
-    <li><b style="color:darkblue">Embedded Systems:</b>Microcontroller Programming</li>
-</ul>
-<h2>Certifications</h2>
-<hr>
-<ul>
-    <li><b style="color:darkblue">NPTEL Online Certification – [Introduction to Internet of Things]</b></li>
-    <li>Secured<b>Score: 85% (Elite)</b>in the final certification examination in 2026</li>
-    <li>Certified by<u><b>National Programme on Technology Enhanced Learning (NPTEL)</b></u></li>
-</ul>
-<h2>Achievements</h2>
-<hr>
-<ul>
-    <li>Got selected for the Internal <b>Smart India Hackathon 2025</b></li>
-    <li>Very enthusiastic about participating in tech events and competitions</li>
-</ul>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <h1>Rohith Gummuluri</h1>
+
+        <div class="contact">
+            <a href="mailto:rohithgummuluri12@gmail.com">
+                rohithgummuluri12@gmail.com
+            </a>
+            |
+            +91 8367218113
+            |
+            Tadepalligudem, Andhra Pradesh
+        </div>
+
+    </header>
+
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="section">
+
+        <h2 class="section-title">Professional Summary</h2>
+
+        <div class="section-content">
+
+            <p class="summary">
+                Third-year B.Tech student specializing in Artificial Intelligence and
+                Machine Learning with hands-on experience building web applications,
+                Generative AI solutions, and database-backed projects. Skilled in
+                Python, Java, C, HTML, CSS, JavaScript, Flask, MongoDB, SQL, and
+                REST APIs. Seeking an internship opportunity to apply technical skills,
+                gain practical industry experience, and contribute to real-world
+                technology projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="section-content">
+
+            <div class="education-item">
+                <strong>
+                    Bachelor of Technology in Artificial Intelligence and Machine Learning
+                </strong>
+                <br>
+                <span class="education-meta">
+                    Sasi Institute of Technology and Engineering |
+                    2024 - 2028
+                </span>
+            </div>
+
+            <div class="education-item">
+                <strong>Intermediate</strong>
+                <br>
+                <span class="education-meta">
+                    Sasi Junior College, Tadepalligudem |
+                    2022 - 2024
+                </span>
+            </div>
+
+            <div class="education-item">
+                <strong>SSC</strong>
+                <br>
+                <span class="education-meta">
+                    Sasi English Medium School, Tadepalligudem |
+                    2020 - 2022
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERNSHIP -->
+    <section class="section">
+
+        <h2 class="section-title">Internship Experience</h2>
+
+        <div class="section-content">
+
+            <div class="experience-title">
+                AI/ML Intern -
+                National Institute of Technology, Tiruchirappalli
+            </div>
+
+            <div class="experience-meta">
+                May 2026 - July 2026
+            </div>
+
+            <ul>
+                <li>
+                    Completed an internship focused on Artificial Intelligence
+                    and Machine Learning under faculty guidance.
+                </li>
+
+                <li>
+                    Gained practical exposure to AI/ML concepts, applications,
+                    and problem-solving approaches.
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="section-content">
+
+
+            <!-- PROJECT 1 -->
+            <div class="project">
+
+                <div class="project-title">
+                    AI Research Assistant
+                </div>
+
+                <p class="project-description">
+                    Built a web-based AI research assistant that accepts user
+                    queries, retrieves information from web and book sources,
+                    and generates structured summaries, key points, and source
+                    references using Generative AI. Developed the application
+                    with a Flask backend and integrated external APIs for
+                    research and information retrieval.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong>
+                    Python, Flask, Generative AI, OpenRouter API,
+                    Serper API, Google Books API, HTML, CSS, JavaScript
+                </p>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="project">
+
+                <div class="project-title">
+                    ReConnect - Childhood Best Friend Search Platform
+                </div>
+
+                <p class="project-description">
+                    Developing a platform that helps users reconnect with
+                    childhood friends after losing contact. The system stores
+                    profile and childhood information such as school, class,
+                    location, batch, teacher details, and memories in MongoDB.
+                    A field-based matching approach compares user information
+                    to identify potential childhood connections.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript, Python, Flask, MongoDB, REST APIs
+                </p>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="project">
+
+                <div class="project-title">
+                    Core of Pencil - Business Website
+                </div>
+
+                <p class="project-description">
+                    Designed and developed a responsive business website for
+                    Core of Pencil with product presentation, pricing, gallery,
+                    and ordering functionality. Integrated WhatsApp so that
+                    customer order details can be sent directly for processing.
+                    Implemented responsive layouts, interactive elements, and
+                    smooth navigation to improve the customer experience.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong>
+                    HTML5, CSS3, JavaScript, WhatsApp Integration, GitHub Pages
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="section">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="section-content">
+
+            <ul class="skills">
+
+                <li>
+                    <strong>Programming Languages:</strong>
+                    Python, Java, C
+                </li>
+
+                <li>
+                    <strong>Web Development:</strong>
+                    HTML5, CSS3, JavaScript, Flask
+                </li>
+
+                <li>
+                    <strong>AI/ML:</strong>
+                    Artificial Intelligence, Machine Learning,
+                    Generative AI
+                </li>
+
+                <li>
+                    <strong>Database:</strong>
+                    MongoDB, SQL
+                </li>
+
+                <li>
+                    <strong>APIs & Tools:</strong>
+                    REST APIs, OpenRouter API, Serper API,
+                    Google Books API, Git, GitHub, VS Code
+                </li>
+
+                <li>
+                    <strong>Core Concepts:</strong>
+                    Data Structures and Algorithms,
+                    Object-Oriented Programming
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section class="section">
+
+        <h2 class="section-title">Certifications & Training</h2>
+
+        <div class="section-content">
+
+            <div class="certification">
+                <strong>
+                    Introduction to Internet of Things - NPTEL
+                </strong>
+                <br>
+                Score: 85% (Elite) | 2026
+            </div>
+
+            <div class="certification">
+                <strong>
+                    3D Printing - MSME Technology Development Centre (PPDC)
+                </strong>
+                <br>
+                96 Hours | March 2026 - April 2026
+            </div>
+
+            <div class="certification">
+                <strong>
+                    Problem Solving using Data Structures & Algorithms -
+                    PurpleLane
+                </strong>
+                <br>
+                2-Week Workshop | February 2026
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section">
+
+        <h2 class="section-title">Achievements & Activities</h2>
+
+        <div class="section-content">
+
+            <ul>
+
+                <li>
+                    Participated in the SIH Internal Hackathon 2026
+                    at Sasi Institute of Technology and Engineering.
+                </li>
+
+                <li>
+                    Participated in technical workshops and
+                    hands-on development activities.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+</div>
+
 </body>
 </html>
